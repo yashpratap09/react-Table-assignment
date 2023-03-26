@@ -1,0 +1,56 @@
+
+body{
+    background: linear-gradient(90deg, rgba(238,174,202,0.9557072829131653) 17%, rgba(148,187,233,1) 100%);
+  }
+
+
+  button{
+    margin: 1rem;
+   width: 7rem;
+   height: 2rem;
+   border-radius: 7px;
+   border: rgb(247, 171, 162) solid;
+
+  }
+
+
+  .mainbox{
+    display: flex;
+  }
+
+  .first{
+    height: 43rem;
+    width:48%;
+    /* background: rgb(238,174,202); */
+    background: linear-gradient(90deg, rgba(238,174,202,0.9557072829131653) 17%, rgba(148,187,233,1) 100%);
+  
+  
+  }
+  
+  .second{
+    height: 43rem;
+    width: 52%;
+    background-color: #efe9d1;
+    overflow-y: scroll;
+    background: rgb(174,186,238);
+  background: linear-gradient(90deg, rgba(174,186,238,0.9557072829131653) 0%, rgba(197,233,148,1) 62%);
+  }
+
+  table{
+
+    border: 2px solid forestgreen;
+    width: 740px;
+    height: auto;
+
+}
+th {
+  border-bottom: 1px solid black;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+  
+td {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
