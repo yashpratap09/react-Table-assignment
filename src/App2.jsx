@@ -3,7 +3,7 @@ import  "./App2.css"
 
 function App2() {
 
-    const [data , setdata] = useState({Button:'' , time:""})
+    // const [data , setdata] = useState({Button:'' , time:""})
     const [finalData, setfinalData] = useState([])
 
     const date = new Date();
@@ -11,14 +11,11 @@ function App2() {
         + ':' + date.getMinutes() 
         + ":" + date.getSeconds();
 
-    const handlerClick = ()=>{
-        console.log(data)
+    const handlerClick = (A)=>{
 
-        if(data.Button==""){
-            return 
-        }else(
-            setfinalData(olddata=>[...olddata,data])
-        )
+       
+            setfinalData(olddata=>[...olddata,{ Button:A , time:showTime}])
+        
         
         // setfinalData(olddata=>[...olddata,data])
         
@@ -38,29 +35,29 @@ function App2() {
           <div className='first'> 
             <div>
             <button onClick={(e)=>{
-                setdata({ Button:"A" , time:showTime})
-                handlerClick()
+                // setdata({ Button:"A" , time:showTime})
+                handlerClick("A")
             }}>A</button>
             </div>
 
             <div>
             <button onClick={(e)=>{
-                setdata({ Button:"B" , time:showTime})
-                handlerClick()
+                // setdata({ Button:"B" , time:showTime})
+                handlerClick("B")
             }}>B</button>
             </div>
 
             <div>
             <button onClick={(e)=>{
-                setdata({ Button:"C" , time:showTime})
-                handlerClick()
+                // setdata({ Button:"C" , time:showTime})
+                handlerClick("C")
             }}>C</button>
             </div>
 
             <div>
             <button onClick={(e)=>{
-                setdata({ Button:"D" , time:showTime})
-                handlerClick()
+                // setdata({ Button:"D" , time:showTime})
+                handlerClick("D")
             }}>D</button>
             </div>
 
