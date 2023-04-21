@@ -4,9 +4,11 @@ body{
 
 .input1{
   margin: 1rem;
+  display: flex;
 }
-input{
-  width: 60%;
+textarea{
+  width: 85%;
+  height: 13rem;
   margin: 1rem;
   padding: 0.7rem;
   border-radius: 14px;
@@ -16,11 +18,7 @@ input{
 
 }
 
-.input1 label{
-  font-size: 1.2rem;
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 
 
 
@@ -32,14 +30,9 @@ table{
     height: auto;
 
 }
-th {
-  border-bottom: 1px solid black;
-  padding: 1rem;
-  font-size: 1.2rem;
-}
+
   
 td {
-  text-align: center;
   font-size: 1.2rem;
   padding: 1rem;
 }
@@ -71,6 +64,37 @@ td {
   background: rgb(174,186,238);
 background: linear-gradient(90deg, rgba(174,186,238,0.9557072829131653) 0%, rgba(197,233,148,1) 62%);
 }
+
+button{
+ width: 6rem;
+ height: 2rem;
+  margin: 5px;
+  border-radius: 8px;
+  border: #efe9d1 solid;
+  cursor: pointer;
+
+}
+
+.drop{
+ background-color: white;
+  max-width: 8rem;
+  font-size: 0.9rem;
+  border-radius: 9px;
+  position: absolute;
+  
+}
+.singlebox{
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.singlebox:hover{
+  background-color: rgba(109, 167, 255, 0.962);
+  cursor: pointer;
+}
+
 
 
 
