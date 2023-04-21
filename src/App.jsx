@@ -12,6 +12,7 @@ function App() {
   const [showDrop,setShowDrop] = useState(false)
   const [drop, setDrop] = useState("");
   const [counter, setCounter] = useState(0)
+  const [position, setPosition] = useState(true)
   
   let name = [
     "Gina Williams",
@@ -42,6 +43,11 @@ function App() {
     d.style.top = y_pos+'px';
     
     
+  }
+  if(showDrop && position && data.text[0]==="@"){
+
+    placeDiv(45,85)
+    setPosition(false)
   }
 
   //======================================================//
@@ -185,7 +191,9 @@ function App() {
 
         
         // console.log(drop)
-      }
+      }else(
+        setShowDrop(false)
+      )
     }
 
     setdata({ ...data, text: e.target.value });
